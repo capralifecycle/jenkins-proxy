@@ -31,7 +31,9 @@ buildConfig([
     }
 
     stage('Test image to verify nginx works') {
-      img.inside {
+      // We need to force the container to run as root so that nginx will have
+      // proper access to its files.
+      img.inside('-u root') {
         sh './jenkins/test-image.sh'
       }
     }
