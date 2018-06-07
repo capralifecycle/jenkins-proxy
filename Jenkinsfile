@@ -30,6 +30,12 @@ buildConfig([
       img = docker.build(dockerImageName, "--cache-from $dockerImageName:$lastImageId --pull .")
     }
 
+    stage('Test image to verify nginx works') {
+      img.inside {
+        sh './jenkins/test-image.sh'
+      }
+    }
+
     def isSameImage = dockerPushCacheImage(img, lastImageId)
 
     if (env.BRANCH_NAME == 'master' && !isSameImage) {
