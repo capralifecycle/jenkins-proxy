@@ -10,3 +10,5 @@ The Nginx proxy provides two uses:
   The internal is used for slaves (and this proxy) and the public
   is used for this proxy. A ECS container cannot have multiple
   load balancers attached.
+
+Details about our setup is available on https://confluence.capraconsulting.no/x/uALGBQ
