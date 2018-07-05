@@ -1,6 +1,6 @@
 # Nginx proxy in front of Jenkins
 
-[![Build Status](https://jenkins.capra.tv/buildStatus/icon?job=jenkins-proxy/master)](https://jenkins.capra.tv/job/jenkins-proxy/master/job/master/)
+[![Build Status](https://jenkins.capra.tv/buildStatus/icon?job=jenkins-proxy/master)](https://jenkins.capra.tv/job/jenkins-proxy/job/master/)
 
 This repository contains the Docker image for Nginx used as proxy
 in front of our Jenkins master service.
