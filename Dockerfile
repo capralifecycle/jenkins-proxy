@@ -1,3 +1,3 @@
-FROM nginx:1.15-alpine@sha256:3ab912e3096b4d9e0db4e57513e232406216f5acdb89d651312407ce28413ce8
+FROM nginx:1.15-alpine@sha256:988afad1140051ca36a4ef9b127f1f5a82d54edde90f89e7f797d37a34a15fc9
 
 ADD container/nginx.conf /etc/nginx/nginx.conf
