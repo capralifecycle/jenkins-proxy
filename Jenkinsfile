@@ -26,7 +26,7 @@ buildConfig([
     def lastImageId = dockerPullCacheImage(dockerImageName)
 
     stage('Build Docker image') {
-      img = docker.build(dockerImageName, "--cache-from $lastImageId --pull .")
+      img = docker.build(dockerImageName, "--cache-from $lastImageId .")
     }
 
     stage('Test image to verify nginx works') {
