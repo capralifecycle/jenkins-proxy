@@ -1,3 +1,3 @@
-FROM nginx:1.19-alpine@sha256:07ab71a2c8e4ecb19a5a5abcfb3a4f175946c001c8af288b1aa766d67b0d05d2
+FROM nginx:1.20-alpine@sha256:e015192ec74937149dce3aa1feb8af016b7cce3a2896246b623cfd55c14939a6
 
 ADD container/nginx.conf /etc/nginx/nginx.conf
