@@ -11,4 +11,4 @@ The Nginx proxy provides two uses:
   is used for this proxy. A ECS container cannot have multiple
   load balancers attached.
 
-Details about our setup is available on https://confluence.capraconsulting.no/x/uALGBQ
+Details about our setup is available on https://liflig.atlassian.net/wiki/spaces/TNG/pages/17637621/Liflig+Jenkins
